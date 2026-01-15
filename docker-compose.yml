@@ -1,0 +1,15 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.inner
+    image: autoencoder
+    deploy:
+      replicas: 8
+    network_mode: "host"
+
+    volumes:
+      - ./:/app
+    
+    environment:
+      - PYTHONUNBUFFERED=1

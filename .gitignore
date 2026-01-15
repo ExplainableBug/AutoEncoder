@@ -1,0 +1,12 @@
+# 환경 설정 및 보안
+.env
+
+# 파이썬 캐시
+__pycache__/
+
+# 데이터셋
+*.csv
+
+# 실행 결과물 및 로그
+outputs/
+xai_results/

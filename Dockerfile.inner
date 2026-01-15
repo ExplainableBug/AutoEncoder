@@ -1,0 +1,13 @@
+FROM python:3.10-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+
+# 필요 라이브러리 설치
+RUN pip install --upgrade pip
+RUN pip install --no-cache-dir -r requirements.txt 
+
+COPY . .
+
+CMD ["python", "consumer.py"]

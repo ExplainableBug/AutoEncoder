@@ -1,0 +1,8 @@
+kafka-python
+pandas
+python-dotenv
+torch
+joblib
+numpy
+scikit-learn
+shap
